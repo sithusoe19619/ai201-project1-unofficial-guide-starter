@@ -23,7 +23,7 @@ SAMPLE_COUNT = 5
 
 def _inspect_pause(cleaned: list[dict]) -> None:
     print("\n" + "=" * 60)
-    print("STAGE 2 — MANUAL INSPECTION")
+    print("STAGE 3 — MANUAL INSPECTION")
     print("=" * 60)
 
     target = next(
@@ -44,7 +44,7 @@ def _inspect_pause(cleaned: list[dict]) -> None:
 
 def _sample_chunks(all_chunks: list[dict]) -> None:
     print("\n" + "=" * 60)
-    print("STAGE 4 — CHUNK INSPECTION (5 samples)")
+    print("STAGE 5 — CHUNK INSPECTION (5 samples)")
     print("=" * 60)
 
     # Pick one per source type where possible, then fill randomly
@@ -84,12 +84,12 @@ def main() -> None:
         print("\n✗ No documents were ingested. Check manual fallback instructions above.")
         return
 
-    # Stage 2
+    # Stage 3
     _inspect_pause(cleaned)
 
-    # Stage 3
+    # Stage 4
     print("\n" + "=" * 60)
-    print("STAGE 3 — CHUNK")
+    print("STAGE 4 — CHUNK")
     print("=" * 60)
 
     all_chunks: list[dict] = []
@@ -101,16 +101,15 @@ def main() -> None:
 
     print(f"\n→ {len(all_chunks)} total chunks across {len(cleaned)} documents\n")
 
-    # Stage 4
+    # Stage 5
     _sample_chunks(all_chunks)
 
-    # Stage 5
     with open(CHUNKS_PATH, "w", encoding="utf-8") as f:
         json.dump(all_chunks, f, ensure_ascii=False, indent=2)
 
     # Stage 6
     print("\n" + "=" * 60)
-    print("STAGE 5 — SUMMARY")
+    print("STAGE 6 — SUMMARY")
     print("=" * 60)
     print(f"  Documents processed : {len(cleaned)}/{10}")
     print(f"  Total chunks        : {len(all_chunks)}")

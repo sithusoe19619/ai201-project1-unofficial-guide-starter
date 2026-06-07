@@ -55,7 +55,7 @@
 
 **Why these choices fit your documents:** Most sources are medium-to-long guides (800–2,500 words) with key facts — grant amounts, eligibility rules, deadlines — scattered across sections rather than concentrated in one place. Chunks of 400 tokens preserve enough context so an eligibility condition stays near the program name it belongs to, while remaining small enough for precise retrieval. The 50-token overlap prevents information from being lost at boundaries. Before chunking, commercial pages are pre-processed to strip navigation, footers, and promotional sections. Reddit posts are collected as one document per thread (original post + top 5 comments) and chunked as plain prose.
 
-**Final chunk count:** 40 chunks across 10 documents (4 per government source, 2–8 per nonprofit/commercial/reddit source)
+**Final chunk count:** 51 chunks across 10 documents (2–4 per government source, 3–6 per nonprofit/commercial, 19 from Reddit)
 
 ---
 
