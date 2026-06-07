@@ -9,64 +9,44 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+"Minimizing Out-of-Pocket Cost for College Students" covers the full ecosystem of free and subsidized resources available to enrolled students — federal grants, merit scholarships, work-study jobs, paid research positions, food assistance programs, emergency funds, and financial aid appeal strategies. This knowledge is genuinely hard to find because it is fragmented across official government portals, nonprofit program pages, scholarship databases, and student community forums — and the most actionable insights (which programs pay quickly, which appeals succeed, which campus resources most students never discover) live in peer-written Reddit threads and student testimonials rather than any single official guide. A student who knows how to stack these resources can dramatically reduce what they pay out of pocket, but most never learn the full picture exists.
 
 ---
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
-
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Federal Pell Grants — StudentAid.gov | Official government guide | https://studentaid.gov/understand-aid/types/grants/pell |
+| 2 | Federal Work-Study — StudentAid.gov | Official government guide | https://studentaid.gov/understand-aid/types/work-study |
+| 3 | 8 Things About Work-Study — StudentAid.gov | Official government article | https://studentaid.gov/articles/8-things-federal-work-study/ |
+| 4 | NSF REU for Students — NSF.gov | Official government program page | https://www.nsf.gov/funding/initiatives/reu/students |
+| 5 | SNAP for College Students — USDA | Official government policy page | https://www.fns.usda.gov/snap/students |
+| 6 | UNCF Emergency Student Aid | Nonprofit program page | https://uncf.org/pages/cesa |
+| 7 | Swipe Out Hunger / CUFBA | Nonprofit organization page | https://swipehunger.org/cufba |
+| 8 | Financial Aid Appeal Letter — NerdWallet | Financial media guide | https://www.nerdwallet.com/student-loans/learn/financial-aid-appeal-letter |
+| 9 | Emergency Grants for College Students — SoFi | Financial media guide | https://www.sofi.com/learn/content/emergency-grants-college/ |
+| 10 | r/financialaid — Reddit | Student community forum | https://www.reddit.com/r/financialaid/ |
 
 ---
 
 ## Chunking Strategy
 
-<!-- Describe your chunking approach with enough specificity that someone else could reproduce it.
-     Include:
-     - Chunk size (characters or tokens) and why that size fits your documents
-     - Overlap size and why (or why not) you used overlap
-     - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
-     - What your final chunk count was across all documents -->
+**Chunk size:** 400 tokens
 
-**Chunk size:**
+**Overlap:** 50 tokens
 
-**Overlap:**
+**Why these choices fit your documents:** Most sources are medium-to-long guides (800–2,500 words) with key facts — grant amounts, eligibility rules, deadlines — scattered across sections rather than concentrated in one place. Chunks of 400 tokens preserve enough context so an eligibility condition stays near the program name it belongs to, while remaining small enough for precise retrieval. The 50-token overlap prevents information from being lost at boundaries. Before chunking, commercial pages are pre-processed to strip navigation, footers, and promotional sections. Reddit posts are collected as one document per thread (original post + top 5 comments) and chunked as plain prose.
 
-**Why these choices fit your documents:**
-
-**Final chunk count:**
+**Final chunk count:** (to be filled after ingestion is complete)
 
 ---
 
 ## Embedding Model
 
-<!-- Name the embedding model you used and explain your choice.
-     Then answer: if you were deploying this system for real users and cost wasn't a constraint,
-     what tradeoffs would you weigh in choosing a different model?
-     Consider: context length limits, multilingual support, accuracy on domain-specific text,
-     latency, and local vs. API-hosted. -->
+**Model used:** all-MiniLM-L6-v2 via sentence-transformers (local inference, no API key required)
 
-**Model used:**
-
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** all-MiniLM-L6-v2 is fast, free, and runs entirely locally — the right choice for a student project with no API budget. In a real production deployment, the tradeoffs would be: (1) Context length — MiniLM handles 256 tokens max per chunk, which may truncate longer passages; a model like OpenAI's text-embedding-3-small handles 8,191 tokens. (2) Domain accuracy — a general-purpose model may not rank financial aid jargon (EFC, SAI, FSEOG, dependency override) as precisely as a finance-tuned model. (3) Multilingual support — irrelevant for this corpus but critical for a diverse student population. (4) Latency — local inference adds roughly 50ms per query versus under 10ms for a hosted API at scale. (5) Cost — API-hosted embeddings ($0.00002 per 1K tokens for OpenAI) may ultimately be cheaper than infrastructure costs for local inference at millions of queries.
 
 ---
 
