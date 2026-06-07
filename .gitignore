@@ -16,5 +16,10 @@ env/
 chroma_db/
 chroma/
 
+# Scraped document content — regenerate with pipeline.py
+documents/raw/
+documents/clean/
+documents/chunks.json
+
 # macOS
 .DS_Store

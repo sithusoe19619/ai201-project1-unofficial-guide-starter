@@ -65,6 +65,8 @@
 
 **Reasoning:** Most sources are medium-to-long guides (800–2,500 words) with key facts — grant amounts, eligibility rules, deadlines — scattered across sections rather than concentrated in one place. Fixed-size chunking at 400 tokens with 50-token overlap preserves enough context so that an eligibility condition (e.g., "must work 20 hours per week") stays near the program name it belongs to, while keeping chunks small enough for precise retrieval. Before chunking, commercial pages (NerdWallet, SoFi) are pre-processed to strip navigation, footers, and promotional ad sections. Reddit posts are collected as one document per thread (original post body + top 5 comments) and chunked as plain prose. Database landing pages (Fastweb, Bold.org) are not chunked at the homepage level — individual scholarship listing pages are collected instead, since the homepage itself contains minimal extractable text.
 
+**Final chunk count:** 40 chunks across 10 documents
+
 ---
 
 ## Retrieval Approach
