@@ -15,18 +15,35 @@
 
 ## Document Sources
 
-| # | Source | Type | URL or file path |
-|---|--------|------|-----------------|
-| 1 | Federal Pell Grants — StudentAid.gov | Official government guide | https://studentaid.gov/understand-aid/types/grants/pell |
-| 2 | Federal Work-Study — StudentAid.gov | Official government guide | https://studentaid.gov/understand-aid/types/work-study |
-| 3 | 8 Things About Work-Study — StudentAid.gov | Official government article | https://studentaid.gov/articles/8-things-federal-work-study/ |
-| 4 | NSF REU for Students — NSF.gov | Official government program page | https://www.nsf.gov/funding/initiatives/reu/students |
-| 5 | SNAP for College Students — USDA | Official government policy page | https://www.fns.usda.gov/snap/students |
-| 6 | UNCF Emergency Student Aid | Nonprofit program page | https://uncf.org/pages/cesa |
-| 7 | Swipe Out Hunger / CUFBA | Nonprofit organization page | https://swipehunger.org/cufba |
-| 8 | Financial Aid Appeal Letter — NerdWallet | Financial media guide | https://www.nerdwallet.com/student-loans/learn/financial-aid-appeal-letter |
-| 9 | Emergency Grants for College Students — SoFi | Financial media guide | https://www.sofi.com/learn/content/emergency-grants-college/ |
-| 10 | r/financialaid — Reddit | Student community forum | https://www.reddit.com/r/financialaid/ |
+1. **Federal Pell Grants — StudentAid.gov** *(Official government guide)*
+   https://studentaid.gov/understand-aid/types/grants/pell
+
+2. **Federal Work-Study — StudentAid.gov** *(Official government guide)*
+   https://studentaid.gov/understand-aid/types/work-study
+
+3. **8 Things About Work-Study — StudentAid.gov** *(Official government article)*
+   https://studentaid.gov/articles/8-things-federal-work-study/
+
+4. **NSF REU for Students — NSF.gov** *(Official government program page)*
+   https://www.nsf.gov/funding/initiatives/reu/students
+
+5. **SNAP for College Students — USDA** *(Official government policy page)*
+   https://www.fns.usda.gov/snap/students
+
+6. **UNCF Emergency Student Aid** *(Nonprofit program page)*
+   https://uncf.org/pages/cesa
+
+7. **Swipe Out Hunger / CUFBA** *(Nonprofit organization page)*
+   https://swipehunger.org/cufba
+
+8. **Financial Aid Appeal Letter — NerdWallet** *(Financial media guide)*
+   https://www.nerdwallet.com/student-loans/learn/financial-aid-appeal-letter
+
+9. **Emergency Grants for College Students — SoFi** *(Financial media guide)*
+   https://www.sofi.com/learn/content/emergency-grants-college/
+
+10. **r/financialaid — Reddit** *(Student community forum)*
+    https://www.reddit.com/r/financialaid/
 
 ---
 
@@ -71,16 +88,35 @@
      Be honest — a partially accurate or inaccurate result that you explain well is more
      valuable than a suspiciously perfect result. -->
 
-| # | Question | Expected answer | System response (summarized) | Retrieval quality | Response accuracy |
-|---|----------|-----------------|------------------------------|-------------------|-------------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+1. **Q:**
+   **Expected answer:**
+   **System response:**
+   **Retrieval quality:** Relevant / Partially relevant / Off-target
+   **Response accuracy:** Accurate / Partially accurate / Inaccurate
 
-**Retrieval quality:** Relevant / Partially relevant / Off-target  
-**Response accuracy:** Accurate / Partially accurate / Inaccurate
+2. **Q:**
+   **Expected answer:**
+   **System response:**
+   **Retrieval quality:** Relevant / Partially relevant / Off-target
+   **Response accuracy:** Accurate / Partially accurate / Inaccurate
+
+3. **Q:**
+   **Expected answer:**
+   **System response:**
+   **Retrieval quality:** Relevant / Partially relevant / Off-target
+   **Response accuracy:** Accurate / Partially accurate / Inaccurate
+
+4. **Q:**
+   **Expected answer:**
+   **System response:**
+   **Retrieval quality:** Relevant / Partially relevant / Off-target
+   **Response accuracy:** Accurate / Partially accurate / Inaccurate
+
+5. **Q:**
+   **Expected answer:**
+   **System response:**
+   **Retrieval quality:** Relevant / Partially relevant / Off-target
+   **Response accuracy:** Accurate / Partially accurate / Inaccurate
 
 ---
 

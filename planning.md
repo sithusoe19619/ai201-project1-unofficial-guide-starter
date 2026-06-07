@@ -15,18 +15,45 @@
 
 ## Documents
 
-| # | Source | Description | URL or location |
-|---|--------|-------------|-----------------|
-| 1 | Federal Pell Grants — StudentAid.gov | Official eligibility rules, maximum award amounts, and application process for the largest federal grant program | https://studentaid.gov/understand-aid/types/grants/pell |
-| 2 | Federal Work-Study — StudentAid.gov | How work-study is awarded, types of eligible jobs, earning limits, and FAFSA requirements | https://studentaid.gov/understand-aid/types/work-study |
-| 3 | 8 Things About Work-Study — StudentAid.gov | Practical student-facing tips on finding, accepting, and balancing work-study jobs | https://studentaid.gov/articles/8-things-federal-work-study/ |
-| 4 | NSF REU for Students — NSF.gov | Paid undergraduate research opportunities nationwide, stipend details, eligibility, and how to apply | https://www.nsf.gov/funding/initiatives/reu/students |
-| 5 | SNAP for College Students — USDA | Federal food assistance eligibility rules and exemptions specific to students enrolled at least half-time | https://www.fns.usda.gov/snap/students |
-| 6 | UNCF Emergency Student Aid | Emergency grants up to $2,500 for students at HBCU institutions facing sudden hardship | https://uncf.org/pages/cesa |
-| 7 | Swipe Out Hunger / CUFBA | Campus food pantry network supporting 800+ institutions; microgrant fund for student food insecurity | https://swipehunger.org/cufba |
-| 8 | Financial Aid Appeal Letter — NerdWallet | Step-by-step guide to writing an effective financial aid appeal, including what circumstances actually work | https://www.nerdwallet.com/student-loans/learn/financial-aid-appeal-letter |
-| 9 | Emergency Grants for College Students — SoFi | Overview of emergency grant programs across UNCF, Scholarship America, College Success Foundation, and campus offices | https://www.sofi.com/learn/content/emergency-grants-college/ |
-| 10 | r/financialaid — Reddit | Student-shared FAFSA outcomes, aid appeal results, award letter comparisons, and financial aid office experiences | https://www.reddit.com/r/financialaid/ |
+1. **Federal Pell Grants — StudentAid.gov**
+   Official eligibility rules, maximum award amounts, and application process for the largest federal grant program.
+   https://studentaid.gov/understand-aid/types/grants/pell
+
+2. **Federal Work-Study — StudentAid.gov**
+   How work-study is awarded, types of eligible jobs, earning limits, and FAFSA requirements.
+   https://studentaid.gov/understand-aid/types/work-study
+
+3. **8 Things About Work-Study — StudentAid.gov**
+   Practical student-facing tips on finding, accepting, and balancing work-study jobs.
+   https://studentaid.gov/articles/8-things-federal-work-study/
+
+4. **NSF REU for Students — NSF.gov**
+   Paid undergraduate research opportunities nationwide, stipend details, eligibility, and how to apply.
+   https://www.nsf.gov/funding/initiatives/reu/students
+
+5. **SNAP for College Students — USDA**
+   Federal food assistance eligibility rules and exemptions specific to students enrolled at least half-time.
+   https://www.fns.usda.gov/snap/students
+
+6. **UNCF Emergency Student Aid**
+   Emergency grants up to $2,500 for students at HBCU institutions facing sudden hardship.
+   https://uncf.org/pages/cesa
+
+7. **Swipe Out Hunger / CUFBA**
+   Campus food pantry network supporting 800+ institutions; microgrant fund for student food insecurity.
+   https://swipehunger.org/cufba
+
+8. **Financial Aid Appeal Letter — NerdWallet**
+   Step-by-step guide to writing an effective financial aid appeal, including what circumstances actually work.
+   https://www.nerdwallet.com/student-loans/learn/financial-aid-appeal-letter
+
+9. **Emergency Grants for College Students — SoFi**
+   Overview of emergency grant programs across UNCF, Scholarship America, College Success Foundation, and campus offices.
+   https://www.sofi.com/learn/content/emergency-grants-college/
+
+10. **r/financialaid — Reddit**
+    Student-shared FAFSA outcomes, aid appeal results, award letter comparisons, and financial aid office experiences.
+    https://www.reddit.com/r/financialaid/
 
 ---
 
@@ -52,13 +79,20 @@
 
 ## Evaluation Plan
 
-| # | Question | Expected answer |
-|---|----------|-----------------|
-| 1 | What is the maximum Pell Grant award for 2026–27, and what factors determine how much a student receives? | $7,395 maximum; amount depends on financial need, family size, enrollment status (full vs. half-time), and federal poverty guidelines |
-| 2 | Can a college student enrolled half-time qualify for SNAP food benefits, and what exemptions allow it? | Generally no — but exemptions apply for students who work 20+ hours/week in paid employment, participate in a work-study program, are under 18 or 50+, or care for a child under age 6 |
-| 3 | What should a student include in a financial aid appeal letter to have the best chance of receiving more aid? | Document specific changed circumstances (job loss, medical emergency, divorce), address a specific person in the financial aid office, state the exact dollar amount needed, attach supporting documents, and keep the letter to one page |
-| 4 | What is the NSF REU program and how much do students get paid to participate? | Research Experiences for Undergraduates — students conduct research at host institutions and receive competitive stipends plus, in many cases, housing, meals, and travel support; CISE REU supplements can provide up to $10,000 per student |
-| 5 | What emergency grant programs exist for students who suddenly cannot afford to stay enrolled? | UNCF Emergency Student Aid (up to $2,500 for HBCU students), Scholarship America Emergency Aid, College Success Foundation Emergency Fund (up to $500/year), and institution-specific emergency funds available through most campus financial aid offices |
+1. **Q:** What is the maximum Pell Grant award for 2026–27, and what factors determine how much a student receives?
+   **Expected:** $7,395 maximum; amount depends on financial need, family size, enrollment status (full vs. half-time), and federal poverty guidelines.
+
+2. **Q:** Can a college student enrolled half-time qualify for SNAP food benefits, and what exemptions allow it?
+   **Expected:** Generally no — but exemptions apply for students who work 20+ hours/week in paid employment, participate in a work-study program, are under 18 or 50+, or care for a child under age 6.
+
+3. **Q:** What specific elements must a financial aid appeal letter contain?
+   **Expected:** A named contact at the financial aid office, an explanation of changed circumstances (income drop, medical emergency, or divorce), the exact dollar amount being requested, supporting documents that back up the claim, and a total length of no more than one page.
+
+4. **Q:** What does the NSF REU program provide to students, and what is the maximum funding amount for a CISE REU supplement?
+   **Expected:** NSF REU (Research Experiences for Undergraduates) provides paid research positions at universities; participants receive a stipend and in many cases housing, meals, and travel support. The maximum for a CISE REU supplement is $10,000 per student per year.
+
+5. **Q:** What emergency grant programs exist for students who suddenly cannot afford to stay enrolled?
+   **Expected:** UNCF Emergency Student Aid (up to $2,500 for HBCU students), Scholarship America Emergency Aid, College Success Foundation Emergency Fund (up to $500/year), and institution-specific emergency funds available through most campus financial aid offices.
 
 ---
 
