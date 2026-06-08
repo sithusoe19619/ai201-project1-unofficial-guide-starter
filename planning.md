@@ -161,3 +161,5 @@ Give Claude the Retrieval Approach section and ask it to implement `embed_and_st
 
 **Milestone 5 — Generation and interface:**
 Give Claude the Architecture section and the 5 evaluation questions, then ask it to implement `generate_answer(query, chunks)` using the Groq API with a system prompt that enforces grounding. Verify that responses cite sources by name and return a clear "I don't have enough information" message for questions outside the corpus (e.g., "What is the best dorm at UCLA?").
+
+

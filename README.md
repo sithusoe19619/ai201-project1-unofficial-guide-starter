@@ -78,7 +78,15 @@
 
 **System prompt grounding instruction:**
 
+> "You are a financial aid assistant for college students. Answer the user's question using ONLY the document excerpts provided below. Do not use your general training knowledge under any circumstances. If the excerpts do not contain enough information to answer the question, respond with exactly: 'I don't have enough information on that based on my available documents.' When you use information, mention the source name shown before each excerpt. Be specific — cite exact figures, eligibility rules, and dollar amounts as they appear in the text."
+
+The system prompt does three things: (1) prohibits the model from using general training knowledge, (2) mandates a specific refusal phrase for out-of-corpus questions so the model cannot improvise a plausible-sounding answer, and (3) labels each retrieved chunk with its source name so the model can cite naturally in its response.
+
+Each chunk is passed to the model as a labeled block: `Document N (source: <name> | <url>): <chunk text>`, so citation in the response can be verified against the retrieved context.
+
 **How source attribution is surfaced in the response:**
+
+Sources are collected programmatically from the retrieved chunk metadata (`source_name` + `source_url`) **before** the Groq API call. The `_dedupe_sources()` function deduplicates them while preserving order, producing a list like `["pell_grants — https://studentaid.gov/...", ...]`. This list is always returned from `ask()` and displayed in the Gradio UI's "Sources retrieved" box, regardless of whether the model mentions them in its answer text. Attribution is guaranteed by the pipeline — not left to the LLM.
 
 ---
 
