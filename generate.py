@@ -16,35 +16,54 @@ load_dotenv()
 
 MODEL = "llama-3.3-70b-versatile"
 
+SOURCE_DISPLAY_NAMES = {
+    "pell_grants":        "Federal Pell Grants (StudentAid.gov)",
+    "work_study":         "Federal Work-Study (StudentAid.gov)",
+    "work_study_8things": "8 Things About Work-Study (StudentAid.gov)",
+    "nsf_reu":            "NSF Research Experiences for Undergraduates",
+    "snap_students":      "SNAP for College Students (USDA)",
+    "uncf_emergency":     "UNCF Emergency Student Aid",
+    "swipe_out_hunger":   "Swipe Out Hunger / CUFBA",
+    "nerdwallet_appeal":  "Financial Aid Appeal Letter (NerdWallet)",
+    "sofi_emergency":     "Emergency Grants for College Students (SoFi)",
+    "reddit_financialaid": "r/financialaid (Reddit)",
+}
+
 SYSTEM_PROMPT = """\
 You are a financial aid assistant for college students.
 Answer the user's question using ONLY the document excerpts provided below.
 Do not use your general training knowledge under any circumstances.
 If the excerpts do not contain enough information to answer the question, \
 respond with exactly: "I don't have enough information on that based on my available documents."
-When you use information, mention the source name shown before each excerpt.
-Be specific — cite exact figures, eligibility rules, and dollar amounts as they appear in the text.\
+Write a clean, well-structured answer. Use plain prose or numbered lists. \
+Do NOT include source names, URLs, or document labels anywhere in your response — \
+sources are displayed separately. Be specific: cite exact figures, dollar amounts, \
+and eligibility rules exactly as they appear in the excerpts.\
 """
+
+
+def _display_name(source_name: str) -> str:
+    return SOURCE_DISPLAY_NAMES.get(source_name, source_name)
 
 
 def _build_context(chunks: list[dict]) -> str:
     parts = []
     for i, chunk in enumerate(chunks, 1):
         m = chunk["metadata"]
-        header = f"Document {i} (source: {m['source_name']} | {m['source_url']}):"
+        header = f"Document {i} (source: {_display_name(m['source_name'])}):"
         parts.append(f"{header}\n{chunk['text']}")
     return "\n\n".join(parts)
 
 
-def _dedupe_sources(chunks: list[dict]) -> list[str]:
+def _dedupe_sources(chunks: list[dict]) -> list[dict]:
     seen = set()
     sources = []
     for chunk in chunks:
         m = chunk["metadata"]
-        label = f"{m['source_name']} — {m['source_url']}"
-        if label not in seen:
-            seen.add(label)
-            sources.append(label)
+        key = m["source_name"]
+        if key not in seen:
+            seen.add(key)
+            sources.append({"name": _display_name(key), "url": m["source_url"]})
     return sources
 
 
@@ -97,4 +116,4 @@ if __name__ == "__main__":
         print(f"Answer:\n{result['answer']}")
         print("\nSources:")
         for s in result["sources"]:
-            print(f"  • {s}")
+            print(f"  • {s['name']} — {s['url']}")
