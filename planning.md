@@ -165,9 +165,3 @@ Give Claude the Architecture section and the 5 evaluation questions, then ask it
 
 
 
-
-What is the maximum Pell Grant award for 2026–27 and what factors determine how much a student receives?
-
-What specific elements must a financial aid appeal letter contain?
-
-What does the NSF REU program provide and what is the maximum funding amount for a CISE REU supplement?
