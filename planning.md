@@ -79,7 +79,7 @@
 
 ---
 
-## Evaluation Plan
+## Plan
 
 1. **Q:** What is the maximum Pell Grant award for 2026–27, and what factors determine how much a student receives?
    **Expected:** $7,395 maximum; amount depends on financial need, family size, enrollment status (full vs. half-time), and federal poverty guidelines.
@@ -163,3 +163,11 @@ Give Claude the Retrieval Approach section and ask it to implement `embed_and_st
 Give Claude the Architecture section and the 5 evaluation questions, then ask it to implement `generate_answer(query, chunks)` using the Groq API with a system prompt that enforces grounding. Verify that responses cite sources by name and return a clear "I don't have enough information" message for questions outside the corpus (e.g., "What is the best dorm at UCLA?").
 
 
+
+
+
+What is the maximum Pell Grant award for 2026–27 and what factors determine how much a student receives?
+
+What specific elements must a financial aid appeal letter contain?
+
+What does the NSF REU program provide and what is the maximum funding amount for a CISE REU supplement?
